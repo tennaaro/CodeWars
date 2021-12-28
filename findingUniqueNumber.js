@@ -7,6 +7,7 @@ function findUniq(arr) {
   //     return arr[i]
   //   }
   // }
+
   let set = new Set(arr)
   let arrSet = Array.from(set)
 
@@ -24,3 +25,9 @@ function findUniq(arr) {
 
 const a = findUniq([ 1, 1, 1, 2, 1, 1 ])
 console.log(a)
+
+
+// function findUniq(arr) {
+//   arr.sort((a,b)=>a-b);
+//   return arr[0]==arr[1]?arr.pop():arr[0]
+// }
